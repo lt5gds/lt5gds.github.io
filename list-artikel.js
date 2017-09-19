@@ -1,4 +1,9 @@
+
+//tambahin nana file di dalem [] jangan lupa koma dan ''
 var list=['template'];
+
+
+
 function listArtikel(page){
 	for (var i = 0; i < list.length; i++) {
 		if(list[i]!=page){

@@ -6,7 +6,7 @@ a.navbar-brand.navbar-link{
 }*/
 
 nav.navbar.navbar-default{
-  background:#00A885;
+  background:#A33336;
   padding:30px 10px;
 }
 
@@ -31,9 +31,10 @@ div#content-row.row{
 }
 
 body{
-  background-image:url('../img/bg4.png');
+  background-image:url('../patt.jpg');
   background-position:left;
   background-repeat: repeat;
+  background-size: contain;
   /*background-size: cover;*/
   /*background: #f1f1f1;*/
 
