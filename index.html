@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#00a885" />
+    <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon">
+    <title>ADE</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<style>
+gap{
+    content: '';
+    margin:5px;
+}
+
+</style>
+
+<body>
+
+    <nav class="navbar navbar-default" style="margin-bottom: 0;border-radius: 0px">
+        <div class="container-fluid">
+            <div class="navbar-header" style="font-weight: bold;" >ADE
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav"></ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container" id="article-content" >
+        <div class="row" id="content-row" >
+            <div class="col-md-2" ></div>
+            <div class="col-md-8" style="background-color: white;">
+
+            <div class="row">
+                <div class="col-md-12" style="padding:10px 20px" id="content">
+                    <h1><strong>Post</strong></h1>
+                    <hr id="selector">
+                    <ul id="list-artikel">
+                            
+                        </ul>
+                </div>
+                    <!-- <div class="col-md-4">
+                    <h3 class="head monts"><span>Post</span></h3>
+                        <ul id="list-artikel">
+                            <li>
+                                <a href="">
+                                    <h3>lnawldnaown oabdoi aoib wi awndpwani</h3>
+                                </a>
+                            </li>
+                        </ul>
+                    </div> -->
+                </div>
+                </div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+        <h4>Ade Rizky</h4>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/list-artikel.js"></script>
+    <script>
+    // listArtikel('index');
+    // function listArtikel(page){
+    //     var link='php/listArtikel.php';
+    //     $.get(link,{page:page},function(data){
+    //         // var d=JSON.parse(data);
+    //         // alert(data);
+    //         data=JSON.parse(data);
+    //         for (var i = 0; i < data.length; i++) {
+    //             var text=data[i].split('.');
+    //             var h=text[0].substring(0,5)+'...';
+    //             var html='<li><a href="'+data[i]+'"><h3>'+h+'</h3></a></li>';
+    //             $('#list-artikel').append(html);
+    //         }
+    //     });
+    // }
+    listArtikel('index');
+    // alert($("#coba").clone().children().remove().text());
+    </script>
+</body>
+
+</html>
