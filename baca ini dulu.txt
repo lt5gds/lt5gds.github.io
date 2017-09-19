@@ -1,0 +1,9 @@
+cara bikin artikel
+
+1. copy file template.html
+2. edit isi file template
+3. save file jangan sampe sama namanya dan nama file sama kayak nama judul formatnya .html
+4. di paling bawah file ada fungsi "listArtikel()"
+5. isi di dalem kurung dengan nama filenya tanpa .html
+6. buka file 'list-artikel.js'
+7. tambahin nama file di 'list=[]'
