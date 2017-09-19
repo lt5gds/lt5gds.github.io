@@ -1,6 +1,6 @@
 
 //tambahin nana file di dalem [] jangan lupa koma dan ''
-var list=['template'];
+var list=['template','highconcept'];
 
 
 
