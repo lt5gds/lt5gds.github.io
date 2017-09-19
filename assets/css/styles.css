@@ -1,3 +1,14 @@
+@font-face {
+    font-family: outer;
+    src: url(../outer.ttf);
+}
+.outer{
+  font-family: outer;
+}
+
+
+
+
 a.navbar-brand.navbar-link{
 }
 
@@ -6,8 +17,9 @@ a.navbar-brand.navbar-link{
 }*/
 
 nav.navbar.navbar-default{
-  background:#A33336;
+  background:#C50303;
   padding:30px 10px;
+  border: none;
 }
 
 .navbar-header{
@@ -52,17 +64,17 @@ a{
     color: black;
 }
 a:hover, a:focus, a:visited{
-    color: #00A885;
+    color: #C50303;
     text-decoration: none !important;
 }
 .head{
-    /*background-color: #00A885;*/
+    /*background-color: #C50303;*/
     color: white;
     font-weight: bold;
-    border-bottom: 2px solid #00A885;
+    border-bottom: 2px solid #C50303;
 }
 .head span{
-    background-color: #00A885;
+    background-color: #C50303;
     padding: 0px 20px;
 }
 .monts{
@@ -82,6 +94,9 @@ a:hover, a:focus, a:visited{
 .footer h4{
     text-align: center;
 }
+.footer h3{
+    text-align: center;
+}
 .intro{
     font-weight: 600;
     text-align: justify;
@@ -91,7 +106,7 @@ a:hover, a:focus, a:visited{
   border-color: white;
 }
 .label-green{
-  background:#00A885;
+  background:#C50303;
 }
 .half{
   width: 50%;
