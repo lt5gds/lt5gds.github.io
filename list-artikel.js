@@ -1,6 +1,8 @@
 
 //tambahin nana file di dalem [] jangan lupa koma dan ''
-var list=['Rangkuman Dokumentasi Libgdx'];
+
+
+var list=['highconcept','Rangkuman Dokumentasi Libgdx'];
 
 
 
