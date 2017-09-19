@@ -1,6 +1,6 @@
 
 //tambahin nana file di dalem [] jangan lupa koma dan ''
-var list=['template'];
+var list=['Rangkuman Dokumentasi Libgdx'];
 
 
 
@@ -16,6 +16,8 @@ function listArtikel(page){
     	}
     }
 }
+
+
 
 var body = document.body,
     html = document.documentElement;

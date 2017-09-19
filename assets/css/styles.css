@@ -8,6 +8,7 @@ a.navbar-brand.navbar-link{
 nav.navbar.navbar-default{
   background:#A33336;
   padding:30px 10px;
+  border: none;
 }
 
 .navbar-header{
@@ -52,17 +53,17 @@ a{
     color: black;
 }
 a:hover, a:focus, a:visited{
-    color: #00A885;
+    color: #A33336;
     text-decoration: none !important;
 }
 .head{
-    /*background-color: #00A885;*/
+    /*background-color: #A33336;*/
     color: white;
     font-weight: bold;
-    border-bottom: 2px solid #00A885;
+    border-bottom: 2px solid #A33336;
 }
 .head span{
-    background-color: #00A885;
+    background-color: #A33336;
     padding: 0px 20px;
 }
 .monts{
@@ -91,7 +92,7 @@ a:hover, a:focus, a:visited{
   border-color: white;
 }
 .label-green{
-  background:#00A885;
+  background:#A33336;
 }
 .half{
   width: 50%;

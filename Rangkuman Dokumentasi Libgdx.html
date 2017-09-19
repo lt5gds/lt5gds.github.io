@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#00a885" />
+    <!-- <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon"> -->
+    <title>lt5gds</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<style>
+.gap{
+    content: '';
+    margin:5px;
+}
+.menu{
+    position: fixed;
+    right: 0;
+    top: calc(50% - 50px);
+    width: 100px;
+    height: 100px;
+    background-image: url('assets/banana.png');
+    background-size: cover;
+    background-position: center;
+}
+
+</style>
+
+<body>
+
+    <nav class="navbar navbar-default" style="margin-bottom: 0;border-radius: 0px">
+        <div class="container-fluid">
+            <div class="navbar-header" style="font-weight: bold;" >lt5gds
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav"></ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container" id="article-content" >
+        <div class="row" id="content-row" >
+            <div class="col-md-2" ></div>
+            <div class="col-md-10" style="background-color: white;">
+
+            <div class="row">
+                <div class="col-md-9" style="padding:10px 20px" id="content">
+                    <h1><strong>Rangkuman Dokumentasi Libgdx</strong></h1>
+                    <hr id="selector">
+                    <!-- gambar utama -->
+                    <!-- taro gambarnya di assets/img -->
+                    <img src="assets/img/libgdx.png" width="100%" height="auto">
+                    
+                    <hr>
+                    <h3 class="intro"><i>LibGDX merupakan sebuah framework atau API tambahn yang digunakan sebagai membuat game dengan berbagai macam platfom</i></h3>
+                    <hr class="gap">
+                    <h4>File Handling</h4>
+                    <p>Libgdx's Files (code) class dapat melakukan:
+                        <ul>
+                            <li>membaca file</li>
+                            <li>menulis ke file</li>
+                            <li>menduplikat file</li>
+                            <li>memindahkan file</li>
+                            <li>menghapus file</li>
+                            <li>List files and directories</li>
+                            <li>menchek file ada atau tidak</li> 
+                         </ul>
+                    </p>
+                    <p><strong>type penyimpanan file</strong>
+                        <ul>
+                            <li><p>Internal Files : semua assets</p></li>
+                            <li><p>Local Files : ketika menulis sebuah file seperti save </p></li>
+                            <li><p>External Files : ketika memlukan tempat untuk menulis file yang besar</p></li>
+                        </ul>
+                    </p>
+                    <br>
+
+                    <h4>Arsitektur</h4>
+                    <p>Aplikasi merupakan point utama untuk macam-macam project Libgdx. Sebuah Aplikasi menentukan target platform dan graphics backend yang akan digunakan. Interface aplikasi juga menyediakan metode yang terbaik untuk mengakses graphics, audio, input dan file I/O module yang umum. Interface aplikasi juga memberian akses ke Logging module yang umum yang bekerja pada semua cross-platform. Sekarang ini, Libgdx mendukung dua backend untuk aplikasi dekstop (lwjgl dan jogl) dan satu backend untuk Android.
+                    Berikut merupakan diagram alir (aplication Life-cycle) pada aplikasi Libgdx.</p>
+                    <br>
+                    <img src="assets/img/flow.png" width="70%" height="auto" style="margin-left: 15%;margin-right: 15%;">
+                    <br>
+                    <h4>Class Audio</h4>
+                    <p>menggunakan class audio</p>
+                    <code>Audio audio=gdx.audio</code>
+                    <p>audio dihentikan secara otomatis saat metode ApplicationListener.pause() dipanggil, dan dilanjutkan secara otomatis saat metode ApplicationListener.resume()dipanggil.</p>
+                    <p><strong>fungsi</strong></p>
+                    <ul>
+                        <li>newAudioDevice(int samplingRate, boolean isMono)</li>
+                        <li>newAudioRecorder(int samplingRate, boolean isMono)</li>
+                        <li>newMusic(FileHandle file) -> membuat musik yang berputar saat dimainkan</li>
+                        <li>newSound(FileHandle fileHandle) -> membuat musik yang digunakan sebagai effek dalam game</li>
+                    </ul>
+                    <br>
+                    <h4>Graphics</h4>
+                    <p><strong>Viewports</strong><br>
+                        Saat berhadapan dengan layar yang berbeda, seringkali perlu diputuskan untuk menentukan strategi tertentu bagaimana ukuran dan rasio aspek layar yang berbeda harus ditangani. Camera and Stage mendukung strategi viewport yang berbeda, misalnya saat melakukan pemotretan melalui Camera.project (vec, viewportX, viewportY, viewportWidth, viewportHeight).
+                    </p>
+                    <p><strong>2D Graphic</strong><br>
+                        <ul>
+                            <li>SpriteBatch, TextureRegions and Sprites <p> SpriteBatch digunakan untuk menngambar sebuah bentuk layaknya canvas pada html dan javascript, sedangkan texture digunakan untuk memunculkan sebuah file gambar dan textureregion digunakan untuk membuat kotak tempat textur digambar sedankan Sprite untuk textureregion dan batch.</p></li>
+                            <li>2D Animation <p>digunakan untuk membuat ilusi gerakan dengan gambar yang satis dengan mengubah gambar pada setipa frame dengan class <code>Animation</code></p></li>
+                            <li>Orthographic Camera <p>class OrthographicCamera digunakan sebagai dasar dari 2D yaitu paralel projeksi, method yang ada dalam class ini yaitu <code>rotate(float angle);<br>
+                                setToOrtho()
+                                translate(float x, float y)
+                                translate(vector2 vec)
+                                update()
+
+                            </code> </p></li>
+
+                        </ul>
+                    </p>
+                    <h4>Input Handling</h4>
+                    <p><strong>Event Handling</strong> adalah menangkap setiap tindakan user sebagai input seperti swip, touch up, touch down di tombol ata berati saat tombol diklik, keadan yang dapat ditangkap antara lain, <code>
+                        keydown() //saat tombol keyboard di tekan<br>
+                        keyup() //saat melepas tombol keyboard<br>
+                        keyTyped() //saat mengetik<br>
+                        touchDown() //saat moouse diklik  ditekan maka mengahasilkan kordinat<br>
+                        touchUp() //saat mouse klik diangkat <br>
+                        touchDragged() //saat mouse mendrag sesuatu discreen<br>
+                        mouseMoved() //saat pinter mengunjungi suatu area hanya terjadi di dekstop<br>
+                        scrolled() //saat discroll<br>
+
+                    </code></p>
+
+                   
+                    
+                    <h4><span class="label label-default label-green">#tagbiarkerenaja</span></h4>
+                </div>
+                    <div class="col-md-3">
+                    <h3 class="head monts"><span>Post</span></h3>
+                        <ul id="list-artikel">
+                            
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            
+        </div>
+    </div>
+    <!-- <div class="menu">
+        <ul>
+            <li>iwnadoiwnd</li>
+        </ul>
+        
+    </div> -->
+
+
+    <footer class="footer">
+        <h4>LT5GDS</h4>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/list-artikel.js"></script>
+    <script>
+
+    listArtikel('Rangkuman Dokumentasi Libgdx');
+    // alert($("#coba").clone().children().remove().text());
+    </script>
+</body>
+
+</html>
