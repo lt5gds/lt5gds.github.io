@@ -2,7 +2,7 @@
 //tambahin nana file di dalem [] jangan lupa koma dan ''
 
 
-var list=['highconcept','Rangkuman Dokumentasi Libgdx'];
+var list=['index','highconcept','Rangkuman Dokumentasi Libgdx','test libgdx'];
 
 
 
@@ -26,7 +26,7 @@ var body = document.body,
 
 var height = Math.max( body.scrollHeight, body.offsetHeight, 
                        html.clientHeight, html.scrollHeight, html.offsetHeight );
-var h=height-60;
+var h=height;
 var ch=height-140;
 $('footer').attr('style','top:'+h+'px');
 // $('#content').attr('style','height:'+ch+'px');
