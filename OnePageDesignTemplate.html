@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#00a885" />
+    <!-- <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon"> -->
+    <title>lt5gds</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<style>
+.gap{
+    content: '';
+    margin:5px;
+}
+.menu{
+    position: fixed;
+    right: 0;
+    top: calc(50% - 50px);
+    width: 100px;
+    height: 100px;
+    background-image: url('assets/banana.png');
+    background-size: cover;
+    background-position: center;
+}
+</style>
+
+<body>
+
+    <!-- <nav class="navbar navbar-default" style="margin-bottom: 0;border-radius: 0px">
+        <div class="container-fluid">
+            <div class="navbar-header" style="font-weight: bold;" >
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav"></ul>
+            </div>
+        </div>
+    </nav> -->
+    <div class="container" id="article-content" >
+        <div class="row" id="content-row" >
+            <div class="col-md-2" ></div>
+            <div class="col-md-10" style="background-color: white;">
+
+            <div class="row">
+                <div class="col-md-9" style="padding:10px 20px" id="content">
+                    <!-- <h1><strong>Judul Disini</strong></h1> -->
+                    <hr id="selector">
+                    <!-- gambar utama -->
+                    <!-- taro gambarnya di assets/img -->
+                    <img src="assets/foodrush.png" width="100%" height="auto">
+
+                    <h2 align="center"> One Page Design Template</h2>
+                    <br><br>
+ 
+                    <h3> Name </h3> 
+                    <p align="justify"> Food Rush </p>
+                   
+                    <h3> Unique Selling Points</h3> 
+                    <ol>
+                        <li>alchemy like games, namun dengan tema makanan ditambah dengan genre adventure</li>
+                        <li>fast type game (live, die, repeat)</li>
+                    </ol>
+                    
+                    <h3> Theme + Mood </h3> 
+                    <p align="justify"> bertemakan Food survival, memiliki mood pada game yang memacu adrenalin player untuk berfikir cepat dan membuat keputusan dalam waktu singkat yang diimplementasikan ketika memikirkan recipe. </p>
+
+                    <h3> Control </h3> 
+                    <ol>
+                        <li>single character control game</li>
+                        <li>mengontrol karakter perempuan bernama aisha</li>
+                        <li>4 direction control </li>
+                        <li>inventory button</li>
+                        <li>mengarahkan karakter ke resources yang ada pada tiap area untuk mendapat ingredients</li>
+                        <li>mengarahkan karakter ke rumah di area farm untuk transisi ke tampilan mengolah ingredients</li>
+                    </ol>
+
+                    <h3> Goal + Description </h3> 
+                    <p align="justify"> greatest goal atau biggest achievement dari game ini adalah ketika player berhasil membuka (unlock) semua recipe pada game ini (plan awal sekitar 50 - 100 recipe ketika rilis game). Side goal dari game ini adalah mendapat waktu terlama survive dan bersaing dalam greatest survivor (global leaderboard)</p>
+
+                    <h3> Core Mechanics </h3> 
+                    <p align="justify"> Pada game ini player akan memainkan karakter bernama aisha yang memiliki tujuan untuk mencari bahan makanan untuk diolah dan memakannya sebelum hunger bar habis. Bahan makanan pada game ini didapat dari resources(contoh: laut, pohon, sapi, dsb) yang ada pada area di dalam game ini. Game ini memiliki 4 area yaitu seashore, riverside, hills, dan farm yang juga merupakan rumah aisha dan tempat dimana aisha dapat mengolah bahan makanan(combine) yang juga jika tepat akan membuka(unlock) achievement/recipe. Ketika kalah dan mengulang dari awal recipe yang sudah didapat akan tetap ada.</p>
+
+                    <h3> Progression + Flow</h3>
+                    <ul>
+                        <li>increasing number of recipe</li>
+                        <li>increasing area and resources</li>
+                        <li>adding another npc/enemies(maybe)</li>
+                    </ul>
+
+                    <h3> Aesthetic</h3>
+                    <p align="justify">Game ini dikemas dalam 8-bit style arts yang dinilai paling tepat untuk game ini dan disertai backsound dan sound effect.</p>
+
+
+                    <hr>
+                    
+                    <hr>
+                   
+                    
+                    <h4><span class="label label-default label-green">#tagbiarkerenaja</span></h4>
+                </div>
+                    <div class="col-md-3">
+                    <h3 class="head monts"><span>Post</span></h3>
+                        <ul id="list-artikel">
+                            
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            
+        </div>
+    </div>
+    <!-- <div class="menu">
+        <ul>
+            <li>iwnadoiwnd</li>
+        </ul>
+        
+    </div> -->
+
+
+    <!-- <footer class="footer">
+        <h4>LT5GDS</h4>
+    </footer> -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/list-artikel.js"></script>
+    <script>
+    // listArtikel('index');
+    // function listArtikel(page){
+    //     var link='php/listArtikel.php';
+    //     $.get(link,{page:page},function(data){
+    //         // var d=JSON.parse(data);
+    //         // alert(data);
+    //         data=JSON.parse(data);
+    //         for (var i = 0; i < data.length; i++) {
+    //             var text=data[i].split('.');
+    //             var h=text[0].substring(0,5)+'...';
+    //             var html='<li><a href="'+data[i]+'"><h3>'+h+'</h3></a></li>';
+    //             $('#list-artikel').append(html);
+    //         }
+    //     });
+    // }
+    listArtikel('highconcept');
+    // alert($("#coba").clone().children().remove().text());
+    </script>
+</body>
+
+</html>
