@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#00a885" />
+    <!-- <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon"> -->
+    <title>lt5gds</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<style>
+.gap{
+    content: '';
+    margin:5px;
+}
+.menu{
+    position: fixed;
+    right: 0;
+    top: calc(50% - 50px);
+    width: 100px;
+    height: 100px;
+    background-image: url('assets/banana.png');
+    background-size: cover;
+    background-position: center;
+}
+</style>
+
+<body>
+
+    <!-- <nav class="navbar navbar-default" style="margin-bottom: 0;border-radius: 0px">
+        <div class="container-fluid">
+            <div class="navbar-header" style="font-weight: bold;" >
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav"></ul>
+            </div>
+        </div>
+    </nav> -->
+    <div class="container" id="article-content" >
+        <div class="row" id="content-row" >
+            <div class="col-md-2" ></div>
+            <div class="col-md-10" style="background-color: white;">
+
+            <div class="row">
+                <div class="col-md-9" style="padding:10px 20px" id="content">
+                    <!-- <h1><strong>Judul Disini</strong></h1> -->
+                    <hr id="selector">
+                    <!-- gambar utama -->
+                    <!-- taro gambarnya di assets/img -->
+                    <img src="assets/foodrush.png" width="100%" height="auto">
+
+                    <h2 align="center"> Story Bible Template</h2>
+                    <br><br>
+ 
+                    <h3> Basic Story Outline</h3> 
+                    <p align="justify"> Food Rush berlatarkan sebuah daerah yang terpencil dimana karakter yang akan dimainkan player yang bernama aisha tinggal disebuah rumah kecil dengan peternakan (farm) dan dikelilingi oleh sungai (riverside), perbukitan(hills) dan tepi laut (seashore). tempat-tempat tersebut merupakan area dimana player dapat memperoleh ingredients dari resources yang ada pada tiap area. </p> <br>
+                   
+                    <h3> Player Characters</h3> 
+                    <p align="justify">sejauh ini baru ada 1 karakter<br>
+                    Character 1 : Aisha
+                    <p style="color: red">Belum di deskripsikan</p></p><br>
+                    
+                    <h3> Settings </h3> 
+                    <h4>Setting 1 : Farm</h4>
+                    <p align="justify"> merupakan tempat utama dari karakter dan terdapat rumah dari karakter. Rumah merupakan tempat karakter mengolah ingredients untuk mendapat makanan dan recipe. Pada farm terdapat juga resource yang dapat di exploitasi. <br>
+                    Resource in this area : cow(milk, cheese, meat, etc), chicken(chicken meat, egg, etc), field(flour, grain, etc), etc </p>
+
+                    <h4>Setting 2 : Riverside</h4>
+                    <p align="justify">merupakan tempat dimana player dapat mendapatkan freshwater, ikan-ikan air tawar(freshwater fish) dan ingredients lainnya. <br>
+                    Resource in this area : river(freshwater, salmon, etc), etc </p>
+
+                    <h4>Setting 3 : Hills</h4>
+                    <p align="justify">dapat dikatakan juga sebagai hutan/forest dimana player bisa mendapatkan ingredients terutama dari pepohonan.<br>
+                    Resource in this area : tree(apple, mango, etc), bush(strawberry, blueberry, etc), etc</p>
+
+                    <h4>Setting 4 : Seashore</h4>
+                    <p align="justify">merupakan tempat dimana player mendapat ingredients terutama ikan air laut(saltwater fish).<br>
+                    Resource in this area : tree(pinaple, coconut, etc), sea(barracuda, oyster, octopus, etc), etc</p>
+                    <br>
+
+                    <h3> Other Important Narrative Elements </h3> 
+                    <h4> Equipment or "Legendary" Items</h4>
+                    <p align="justify">legendary item adalah berupa rare ingredients yang merupakan salah satu bahan dari beberapa recipe contoh ingredients nya adalah golden egg. Karena beberapa bahan dari recipe adalah rare maka untuk mendapat semua recipe/achievement menjadi suatu tantangan tersendiri untuk player.</p>
+
+                    <h4> Animal Creatures in the World</h3> 
+                    <p align="justify"> hewan pada game Food Rush ini menjadi object Resource/ingredients. </p>
+
+
+                    <hr>
+                    
+                    <hr>
+                   
+                    
+                    <h4><span class="label label-default label-green">#tagbiarkerenaja</span></h4>
+                </div>
+                    <div class="col-md-3">
+                    <h3 class="head monts"><span>Post</span></h3>
+                        <ul id="list-artikel">
+                            
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            
+        </div>
+    </div>
+    <!-- <div class="menu">
+        <ul>
+            <li>iwnadoiwnd</li>
+        </ul>
+        
+    </div> -->
+
+
+    <!-- <footer class="footer">
+        <h4>LT5GDS</h4>
+    </footer> -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/list-artikel.js"></script>
+    <script>
+    // listArtikel('index');
+    // function listArtikel(page){
+    //     var link='php/listArtikel.php';
+    //     $.get(link,{page:page},function(data){
+    //         // var d=JSON.parse(data);
+    //         // alert(data);
+    //         data=JSON.parse(data);
+    //         for (var i = 0; i < data.length; i++) {
+    //             var text=data[i].split('.');
+    //             var h=text[0].substring(0,5)+'...';
+    //             var html='<li><a href="'+data[i]+'"><h3>'+h+'</h3></a></li>';
+    //             $('#list-artikel').append(html);
+    //         }
+    //     });
+    // }
+    listArtikel('StoryBibleTemplate');
+    // alert($("#coba").clone().children().remove().text());
+    </script>
+</body>
+
+</html>
