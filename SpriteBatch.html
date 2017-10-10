@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#00a885" />
+    <!-- <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon"> -->
+    <title>lt5gds</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+</head>
+<style>
+.gap{
+    content: '';
+    margin:5px;
+}
+.menu{
+    position: fixed;
+    right: 0;
+    top: calc(50% - 50px);
+    width: 100px;
+    height: 100px;
+    background-image: url('assets/banana.png');
+    background-size: cover;
+    background-position: center;
+}
+</style>
+
+<body>
+
+    </nav> -->
+    <div class="container" id="article-content" >
+        <div class="row" id="content-row" >
+            <div class="col-md-2" ></div>
+            <div class="col-md-10" style="background-color: white;">
+
+            <div class="row">
+                <div class="col-md-9" style="padding:10px 20px" id="content">
+                    <h1><strong>Mencoba SpriteBatch : Implementasi pada karakter</strong></h1>
+                    <hr id="selector">
+                    <!-- gambar utama -->
+                    <!-- taro gambarnya di assets/img -->
+                    <p>dibawah ini adalah gambar karakter yang digunakan (sebagai contoh)</p>
+                    <img src="assets/img/karc.png" width="100%" height="auto">
+                    
+                    <hr>
+                    <h3 class="intro"><i>Mencoba membuat gerakan pada karakter</i></h3>
+                    <hr class="gap">
+                    
+                    <H3>kodingan</H3>
+                    <pre><code >
+                        private SpriteBatch batch = new SpriteBatch();
+
+                        public void render() {
+
+
+					        batch.begin();
+					        batch.draw(gerak.getKeyFrame(etime,true),400,200,64,54);
+					        batch.end();
+					    }
+
+					    public void AishaStand(){
+
+					        batch.begin();
+					        batch.draw(aisha[face][1],x,y,sx,sy);
+					        batch.end();
+
+
+					    }
+					    public  void AishaMove(){
+
+					        etime += Gdx.graphics.getDeltaTime();
+					        anim=new TextureRegion[2];
+					        anim[0]=aisha[face][1];
+					        anim[1]=aisha[face][2];
+					        gerak=new Animation(speed/8,anim);
+					        batch.begin();
+					        batch.draw(gerak.getKeyFrame(etime,true),x,y,sx,sy);
+					        batch.end();
+					    }
+                    </code></pre>
+                    <br>
+                    <p>note: Sprite diawali dengan begin dan diakhiri dengan end dengan perintah corenya sendiri berada diantara begin dan end</p>
+                    <br>
+                    <h3>Hasil</h3>
+                    <p>Sampai tulisan ini dibuat button dapat di gambarkan di layar namun addlistener masih blm berfungsi</p>
+                    <img src="assets/img/karch.png" width="100%" height="auto">
+                    <hr>
+                    
+                    <hr>
+                   
+                    
+                    <h4><span class="label label-default label-green">#homework4</span></h4>
+                    <h4><span class="label label-default label-green">#yogi</span></h4>
+                </div>
+                    <div class="col-md-3">
+                    <h3 class="head monts"><span>Post</span></h3>
+                        <ul id="list-artikel">
+                            
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            
+        </div>
+    </div>
+    <!-- <div class="menu">
+        <ul>
+            <li>iwnadoiwnd</li>
+        </ul>
+        
+    </div> -->
+
+
+    <footer class="footer">
+        <h4>LT5GDS</h4>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="list-artikel.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    
+    <script>
+        listArtikel('test libgdx');
+        hljs.initHighlightingOnLoad();
+    // listArtikel('index');
+    // function listArtikel(page){
+    //     var link='php/listArtikel.php';
+    //     $.get(link,{page:page},function(data){
+    //         // var d=JSON.parse(data);
+    //         // alert(data);
+    //         data=JSON.parse(data);
+    //         for (var i = 0; i < data.length; i++) {
+    //             var text=data[i].split('.');
+    //             var h=text[0].substring(0,5)+'...';
+    //             var html='<li><a href="'+data[i]+'"><h3>'+h+'</h3></a></li>';
+    //             $('#list-artikel').append(html);
+    //         }
+    //     });
+    // }
+    $(document).ready(function() {
+      $('code').each(function(i, block) {
+        hljs.highlightBlock(block);
+      });
+    });
+    
+    // alert($("#coba").clone().children().remove().text());
+    </script>
+</body>
+
+</html>
