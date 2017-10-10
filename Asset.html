@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#00a885" />
+    <!-- <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon"> -->
+    <title>lt5gds</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<style>
+.gap{
+    content: '';
+    margin:5px;
+}
+.menu{
+    position: fixed;
+    right: 0;
+    top: calc(50% - 50px);
+    width: 100px;
+    height: 100px;
+    background-image: url('assets/banana.png');
+    background-size: cover;
+    background-position: center;
+}
+
+</style>
+
+<body>
+
+    <!-- <nav class="navbar navbar-default" style="margin-bottom: 0;border-radius: 0px">
+        <div class="container-fluid">
+            <div class="navbar-header" style="font-weight: bold;" >
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav"></ul>
+            </div>
+        </div>
+    </nav> -->
+	<div class="container" id="article-content" >
+        <div class="row" id="content-row" >
+            <div class="col-md-2" ></div>
+            <div class="col-md-10" style="background-color: white;">
+    
+
+            <div class="row">
+                <div class="col-md-9" style="padding:10px 20px" id="content">
+                    <h1><strong>Asset : Food Rush</strong></h1>
+                    <hr id="selector">
+                    <!-- gambar utama -->
+                    <!-- taro gambarnya di assets/img -->
+                    <img src="assets/aisa.jpg" width="30%" height="auto">
+                    
+                    <hr>
+                    <h3 class="intro"><i>Asset</i></h3>
+             
+                    <h3>Character</h3>
+                    <p align="justify"> 
+						Konsep dari karakter aisa ini mempunyai mempunyai wajah yang oval dengan adanya tanda lahir di kanan pipinya, kemudian aisa memiliki rambut pendek dan memakai outfit dress berwarna biru muda, lalu dipercantik oleh syalnya berwarna biru tua dilehernya dan membawa tas selempang berwana coklat yang mengartikan bahwa karakter aisa ini selain ia cantic, pintar masak, ia juga senang berpetualang yg ditandakan oleh syal biru tua dilehernya dan ia juga sangat trendy dalam memakai tas selempang coklat yang nantinya digunakan untuk menaruh bahan makanan yang ia dapat. 
+					</p>
+					<ol>
+                        <li><strong>Sprite Aisa</strong></li><br>
+                        <img src="assets/sprite.jpg" width="50%" height="auto">
+						</ol>
+					<ol>
+                        <li><strong>Ingredient Food Rush</strong></li><br>
+                        <img src="assets/bahann.jpg" width="50%" height="auto">
+						</ol>	
+
+                      <hr>
+          
+                    <hr>
+                   
+                    
+                    <h4><span class="label label-default label-green">#dikanurazizah</span></h4>
+					
+                    <h4><span class="label label-default label-green">#artisDikaNurAzizah</span></h4>
+
+                </div>
+                    <div class="col-md-3">
+                    <h3 class="head monts"><span>Post</span></h3>
+                        <ul id="list-artikel">
+                            
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            
+        </div>
+    </div>
+    <!-- <div class="menu">
+        <ul>
+            <li>iwnadoiwnd</li>
+        </ul>
+        
+    </div> -->
+
+
+    <footer class="footer">
+        <h4>LT5GDS</h4>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="list-artikel.js"></script>
+    <script>
+    // listArtikel('artis');
+    // function listArtikel(page){
+    //     var link='php/listArtikel.php';
+    //     $.get(link,{page:page},function(data){
+    //         // var d=JSON.parse(data);
+    //         // alert(data);
+    //         data=JSON.parse(data);
+    //         for (var i = 0; i < data.length; i++) {
+    //             var text=data[i].split('.');
+    //             var h=text[0].substring(0,5)+'...';
+    //             var html='<li><a href="'+data[i]+'"><h3>'+h+'</h3></a></li>';
+    //             $('#list-artikel').append(html);
+    //         }
+    //     });
+    // }
+    listArtikel('asset');
+    // alert($("#coba").clone().children().remove().text());
+    </script>
+</body>
+
+</html>
