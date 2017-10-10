@@ -49,75 +49,51 @@
 
             <div class="row">
                 <div class="col-md-9" style="padding:10px 20px" id="content">
-                    <h1><strong>TestSoundLibgdx</strong></h1>
+                    <h1><strong>Game Architecture [so far]</strong></h1>
                     <hr id="selector">
                     <!-- gambar utama -->
                     <!-- taro gambarnya di assets/img -->
-                    <img src="assets/sound.png" width="100%" height="auto">
+                    <img src="assets/patt.jpg" width="100%" height="auto">
                     
-                    <hr><!-- 
-                    <h3 class="intro"><i>intro</i></h3> -->
+                    <hr>
+                    <h3 class="intro"><i>Berikut merupakan pembahasan arsitektur game Food Rush</i></h3>
                     <hr class="gap">
-                    
-                    <H3>kodingan</H3>
-                    <pre><code >
-                     package com.udacity.gamedev.firstdemo;
-
-
-                import com.badlogic.gdx.Gdx;
-                import com.badlogic.gdx.audio.Music;
-                import com.badlogic.gdx.audio.Sound;
-
-                public class SoundEffect {
-                    public static Music music;
-                    public static Music suarajalan;
-                    //public static Sound suarajalanstop;
-                    public static Music suarapingsan;
-
-
-                    public static void load() {
-                        music = Gdx.audio.newMusic(Gdx.files.internal("backsound1.mp3"));
-                        music.setVolume(0.1f);
-                        music.setLooping(true);
-
-                        suarajalan = Gdx.audio.newMusic(Gdx.files.internal("stepforest.mp3"));
-                        suarajalan.setVolume(0.9f);
-                        //suarajalanstop=Gdx.audio.newSound(Gdx.files.internal("data/stopforest.mp3"));
-                        suarapingsan = Gdx.audio.newMusic(Gdx.files.internal("pingsan.mp3"));
-
-                    }
-
-
-                    public void playMusic(){
-
-                        music.play();
-                    }
-                    public void suarajalan(){
-                        suarajalan.play();
-                    }
-                    public void suarajalanstop(){
-                        suarajalan.stop();
-                    }
-                    public void suarapingsan(){
-                        music.stop();
-                        suarapingsan.play();
-                    }
-                }
-                </code></pre>
-                    <br>
-                    <h3>Hasil</h3>
-
-                    <p>Sampai tulisan ini dibuat backsound telah berhasil diaktifkan</p>
-                    <p>Sound ketika melangkah juga sudah bisa  </p>
-                    <p>Sound ketika hungrybar habis juga sudah berhasil</p>
-                     <img src="assets/sound.png" width="100%" height="auto">
-                     <img src="assets/soundpingsan.png" width="100%" height="auto">
+                    <h3>MVC</h3>
+                    <table>
+                        <thead>
+                            <th>Model</th>
+                            <th>View</th>
+                            <th>Controller</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tile</td>
+                                <td>TileList</td>
+                                <td>MainGame</td>
+                            </tr>
+                            <tr>
+                                <td>Aisha</td>
+                                <td>Camera</td>
+                                <td>InputControler</td>
+                            </tr>
+                            <tr>
+                                <td>SoundEffect</td>
+                                <td> </td>
+                                <td>LauncerMenu (soon)</td>
+                            </tr>
+                            <tr>
+                                <td>Resource (soon)</td>
+                                <td> </td>
+                                <td> </td>
+                            </tr>
+                        </tbody>
+                    </table>
                     <hr>
                     
                     <hr>
                    
                     
-                    <h4><span class="label label-default label-green">#tprogramerOlga</span></h4>
+                    <h4><span class="label label-default label-green">#programerAde</span></h4>
                 </div>
                     <div class="col-md-3">
                     <h3 class="head monts"><span>Post</span></h3>
@@ -145,8 +121,23 @@
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="list-artikel.js"></script>
     <script>
-
-    listArtikel('TestSoundLibgdx');
+    // listArtikel('index');
+    // function listArtikel(page){
+    //     var link='php/listArtikel.php';
+    //     $.get(link,{page:page},function(data){
+    //         // var d=JSON.parse(data);
+    //         // alert(data);
+    //         data=JSON.parse(data);
+    //         for (var i = 0; i < data.length; i++) {
+    //             var text=data[i].split('.');
+    //             var h=text[0].substring(0,5)+'...';
+    //             var html='<li><a href="'+data[i]+'"><h3>'+h+'</h3></a></li>';
+    //             $('#list-artikel').append(html);
+    //         }
+    //     });
+    // }
+    listArtikel('template');
+    // alert($("#coba").clone().children().remove().text());
     </script>
 </body>
 

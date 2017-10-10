@@ -3,7 +3,7 @@
 
 
 
-var list=['index','highconcept','Rangkuman Dokumentasi Libgdx','test libgdx','TestSoundLibgdx','OnePageDesignTemplate','StoryBibleTemplate','CTaylorDesign','sound'];
+var list=['SpriteBatch','index','highconcept','Rangkuman Dokumentasi Libgdx','test libgdx','TestSoundLibgdx','OnePageDesignTemplate','StoryBibleTemplate','CTaylorDesign','sound'];
 
 
 
@@ -30,4 +30,4 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
 var h=height;
 var ch=height-140;
 $('footer').attr('style','top:'+h+'px');
-// $('#content').attr('style','height:'+ch+'px');
+
