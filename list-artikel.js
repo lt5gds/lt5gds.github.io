@@ -3,7 +3,7 @@
 
 
 
-var list=['Game Architecture','SpriteBatch','sound','TestSoundLibgdx','index','highconcept','Rangkuman Dokumentasi Libgdx','test libgdx','OnePageDesignTemplate','StoryBibleTemplate','CTaylorDesign'];
+var list=['InitialDesign','Game Architecture','SpriteBatch','sound','TestSoundLibgdx','index','highconcept','Rangkuman Dokumentasi Libgdx','test libgdx','OnePageDesignTemplate','StoryBibleTemplate','CTaylorDesign'];
 
 
 
