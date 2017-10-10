@@ -2,7 +2,11 @@
 //tambahin nana file di dalem [] jangan lupa koma dan ''
 
 
+<<<<<<< HEAD
 var list=['index','highconcept','Rangkuman Dokumentasi Libgdx','test libgdx','OnePageDesignTemplate','StoryBibleTemplate','CTaylorDesign', 'sound'];
+=======
+var list=['index','highconcept','Rangkuman Dokumentasi Libgdx','test libgdx','TestSoundLibgdx','OnePageDesignTemplate','StoryBibleTemplate','CTaylorDesign'];
+>>>>>>> eeed3ca64c218102f7f729f8e94d5f51f86d34bb
 
 
 
